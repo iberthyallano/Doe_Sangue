@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>Doe sangue! Doe vida</title>
+        <link rel="shortcut icon" href="/icon.png"/>
+
+        <link rel="stylesheet" href="/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+
+        <!--RECURSOS DO BOOTSTRAP-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+    </head>
+
+    <body>
+        
+        <!--AVISO PARA RELIGAR O SCRIPT, POIS ELE NÃO ESTÁ ATIVO-->
+        <noscript>Habilite seu JavaScript!</noscript>
+        
+        <div class="container">
+            <!--CABEÇALHO DA APLICAÇÃO-->
+            <header>
+                <img class="logo" src="/logo.png" alt="Imagem de DOE">
+                <h2>A sua  doação importa</h2>
+                <p>Até 3 vidas com uma doação</p>
+                <p>Mais de 38.000 doações são necessárias todos os dias</p>
+                <p>Apenas 1,9% da população brasileira doa sangue</p>
+
+                <button>Quero ajudar!</button>
+            </header>    
+            
+            <!--FORMULÁRIO DA APLICAÇÃO-->
+            <section class="form hide">
+                <h2 id="form-h2">Entre na lista de doadores</h2>
+                <form action="/" method="POST" onsubmit="return checkFields(event)">
+                    <input 
+                        type="text" 
+                        name="name"
+                        placeholder="Nome completo"
+                        id="name"
+                    >
+                    <input 
+                        type="email" 
+                        name="email"
+                        placeholder="E-mail"
+                        id="email"
+                    >
+                    <input 
+                        type="text" 
+                        name="blood"
+                        placeholder="Tipo sanguineo"
+                        id="blood"
+                    >
+                    <button  type="submit">Enviar</button>
+                </form>
+            </section>
+
+            <!--CORPO DA APLICAÇÃO-->
+            <main>
+                <h2>Total do banco de <span id="cor-span">sangue</span></h2>
+                <section class="donors">
+                    <!--
+                        {%for donor in donors%}
+                            <div class="donor">
+                                <div class="blood">{{donor.blood}}</div>
+                                <p id="Apositivo">{{donor.name}}</p>
+                            </div>
+                        {%endfor%}
+                    -->
+                    <div class="donor">
+                        <div class="blood">A+</div>
+                        <p id="Apositivo">{{sangue[0].toFixed(1)}}%</p>
+                    </div>
+                    <div class="donor">
+                        <div class="blood">A-</div>
+                        <p id="Anegativo">{{sangue[1].toFixed(1)}}%</p>
+                    </div>
+                    <div class="donor">
+                        <div class="blood">B+</div>
+                        <p id="Bpositivo">{{sangue[2].toFixed(1)}}%</pid="Apositivo">
+                    </div>
+                    <div class="donor">
+                        <div class="blood">B-</div>
+                        <p id="Bnegativo">{{sangue[3].toFixed(1)}}%</p>
+                    </div>
+                    <div class="donor">
+                        <div class="blood">O+</div>
+                        <p id="ABpositivo">{{sangue[4].toFixed(1)}}%</p>
+                    </div>
+                    <div class="donor">
+                        <div class="blood">O-</div>
+                        <p id="ABnegativo">{{sangue[5].toFixed(1)}}%</p>
+                    </div>
+                    <div class="donor">
+                        <div class="blood">AB+</div>
+                        <p id="Opositivo">{{sangue[6].toFixed(1)}}%</p>
+                    </div>
+                    <div class="donor">
+                        <div class="blood">AB-</div>
+                        <p id="Onegativo">{{sangue[7].toFixed(1)}}%</p>
+                    </div>
+                </section>
+            </main>
+
+            <!--RODAPÉ DA APLICAÇÃO-->
+            <footer>
+                <div class="container">
+                    <div class="row row-cols-2">
+                        <div class="col">
+                            <p>Copyright © <a href="https://github.com/iberthyallano" target="_blank">Iberthy Allano</a>.</p>
+                        </div>
+                        <div class="col">
+                            <p>Designed by <a href="https://github.com/iberthyallano" target="_blank">Iberthy Allano</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="/scripts.js"></script>
+
+        <!--RECURSOS DO BOOTSTRAP-->
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    </body>
+</html>
+

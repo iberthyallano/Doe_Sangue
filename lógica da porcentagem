@@ -1,0 +1,20 @@
+	4 -----> 100
+	3 ----->  x
+	
+	300 = 4*x
+	x = 300/4
+
+	x = 75
+
+
+
+	ou seja
+
+
+
+	total_donors        ----------------> 100
+      total_blood_tipo      ---------------->  x
+
+	total_donors * x = total_blood_tipo * 100
+
+	x = (total_blood_tipo * 100) / total_donors
