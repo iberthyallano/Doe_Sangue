@@ -11,11 +11,11 @@ server.use(express.urlencoded({ extended: true }));
 //config conexão do DB
 const Pool = require('pg').Pool;
 const db = new Pool({
-    user:'',
-    password:'',
-    host: '',
-    port: ,
-    database: ''
+    user:'postgres',
+    password:'160402',
+    host: 'localhost',
+    port: 5432,
+    database: 'doe'
 });
 
 //config a template engine
@@ -130,11 +130,7 @@ server.post("/",function(req, res){
     console.log(name);
     console.log(email);
     console.log(blood);
-
-    if(name == "" || email == "" || blood == ""){
-        return res.send("Preencha todos os dados");
-    }
-
+    
     if(blood != "A+" && 
        blood != "A-" && 
        blood != "B+" && 
