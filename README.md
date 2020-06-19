@@ -1,7 +1,7 @@
 <h1 align="center">
   <img src="./public/logo.png" width="250px" /><br>
   Toda doação é importante!
-</h2>
+</h1>
 
 <br>
 
