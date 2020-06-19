@@ -9,8 +9,10 @@
 Este projeto foi desenvolvido com as seguintes tecnologias:
 - [Node.js](https://nodejs.org/en/)
 - [Nunjucks](https://mozilla.github.io/nunjucks/)
+- [Nodemon](https://nodemon.io/)
 - [Express](https://expressjs.com/pt-br/)
 - [Postgres](https://node-postgres.com/)
+
 
 ### :syringe: Projeto
 
