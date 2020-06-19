@@ -26,5 +26,6 @@ A doação de sangue é um gesto solidário de doar uma pequena quantidade do pr
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
 ---
-
-Feito por Iberthy Allano.
+<h4 align="center">
+    Feito por <a href="https://www.linkedin.com/in/iberthy-allano-bba4771a4" target="_blank"> Iberthy Allano</a>.
+</h4>
