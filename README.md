@@ -8,8 +8,6 @@
 ### :bookmark_tabs: Tecnologias
 Este projeto foi desenvolvido com as seguintes tecnologias:
 - [Node.js](https://nodejs.org/en/)
-- [Expo](https://expo.io/)
-- [Yarn](https://yarnpkg.com/)
 - [Nunjucks](https://mozilla.github.io/nunjucks/)
 - [Express](https://expressjs.com/pt-br/)
 - [Postgres](https://node-postgres.com/)
