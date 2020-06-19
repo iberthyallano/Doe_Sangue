@@ -25,6 +25,6 @@ function checkFields(event){
 
     if(isEmpty){
         event.preventDefault();
-        alert("Por favor, preencha todos os campos!");
+        alert("Por favor, preencha todos os campos!  ");
     }
 }

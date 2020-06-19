@@ -25,18 +25,6 @@ nunjucks.configure("./", {
     noCache: true,
 });
 
-// let tot = 0;
-// db.query("SELECT COUNT(blood) FROM donors", (err, res) => {
-//     if(err){
-//         console.log(err);
-//     }else{
-//         tot = (res.rows[0].count).value;
-//         //console.log(total) // Hello World!
-//         db.end();
-
-//     } 
-// })
-
 //config da apresentação da página
 server.get("/", function(req, res){
     db.query("SELECT COUNT(blood) FROM donors", function(err, result1){
